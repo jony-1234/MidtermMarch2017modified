@@ -1,5 +1,6 @@
 package algorithm;
 import java.util.Random;
+import algorithm.Sort;
 
 /*
  *Created by PIIT_NYA on 04/22/2017.

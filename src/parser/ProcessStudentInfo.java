@@ -1,10 +1,13 @@
 package parser;
 
 import org.xml.sax.SAXException;
+import java.util.ArrayList;
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ProcessStudentInfo {
 
@@ -35,11 +38,65 @@ public class ProcessStudentInfo {
 				String pathQtp = System.getProperty("user.dir") + "/src/parser/qtp.xml";
 				String tag = "id";
 
-				//Declare a Map with List<String> into it.
-				
-				
+				List<String> kafildata = new ArrayList<String>();
+				kafildata.add("kafil");
+				kafildata.add("codelab");
+				kafildata.add("grade=f");
+				List<String> sharifdata = new ArrayList<String>();
+				sharifdata.add("sharif");
+				sharifdata.add("uddin");
+				sharifdata.add("grade=B");
+				List<String> asifdata = new ArrayList<String>();
+				asifdata.add("asif");
+				asifdata.add("roni");
+				asifdata.add("grade=A");
+				List<String> hudadata = new ArrayList<String>();
+				hudadata.add("huda");
+				hudadata.add("parking issue");
+				hudadata.add("grade=B");
+				List<String> aishadata = new ArrayList<String>();
+				aishadata.add("aisha");
+				aishadata.add("Loop Issue");
+				aishadata.add("grade=c");
+
+				Map<String, List<String>> studentinfo = new LinkedHashMap<>();
+				studentinfo.put("student(id=1)",kafildata);
+				studentinfo.put("student(id=2)",sharifdata);
+				studentinfo.put("student(id=3)",hudadata);
+				studentinfo.put("student(id=4)",asifdata);
+				studentinfo.put("student(id=5)",aishadata);
+
 				/*Declare 2 ArrayList with Student data type to store Selenium student into one of the ArrayList and
 				  Qtp student into another ArrayList. */
+				ArrayList seliniumstudent=new ArrayList();
+				seliniumstudent.add(studentinfo);
+				System.out.println(seliniumstudent);
+				ArrayList qtpstudent=new ArrayList();
+				qtpstudent.add(studentinfo);
+
+
+
+				//Create XMLReader object.
+				XmlReader xml=new XmlReader();
+				xml.convertIntToChar("A");
+				System.out.println();
+				//Parse Data using parseData method and then store data into Selenium ArrayList.
+
+				//Parse Data using parseData method and then store data into Qtp ArrayList.
+
+				//add Selenium ArrayList data into map.
+
+				//add Qtp ArrayList data into map.
+
+
+				//Retrieve map data and display output.
+
+
+
+
+
+				//Declare 2 ArrayList with Student data type to store Selenium student into one of the ArrayList and
+				 // Qtp student into another ArrayList. */
 				
 				
 				
