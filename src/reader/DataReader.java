@@ -20,14 +20,14 @@ public class DataReader {
 
 			//public void ReadeProgram(){
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
-		//String textFile = "C:\\Users\\Md.Golam Robbani\\Documents\\GitHub\\MidtermMarch2017\\src\\data\\self-driving-car.txt";
 
+
+		        String filePath = "c:\\Users\\Md.Golam Robbani\\Desktop\\Homework 4\\Iphone5.txt";
 
 				FileReader fr = null;
 				BufferedReader br = null;
 				try{
-					fr = new FileReader(textFile);
+					fr = new FileReader(filePath);
 					br = new BufferedReader(fr);
 					String text = "";
 					while((text = br.readLine())!=null){
