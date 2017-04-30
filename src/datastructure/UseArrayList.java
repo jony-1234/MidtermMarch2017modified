@@ -3,7 +3,6 @@ package datastructure;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-
 public class UseArrayList {
 
 	public static void main(String[] args) {
@@ -11,31 +10,26 @@ public class UseArrayList {
 		 * Demonstrate how to use ArrayList that includes add,peek,remove,retrieve elements.
 		 * Use For Each loop and while loop with Iterator to retrieve data.
 		 * Store all the sorted data into one of the databases.
-		 * 
+		 *
 		 */
-		int [] jony={3,4,6,7,8,10};
-		for(int i=0;i<jony.length;i++){
-			System.out.println(jony[i]);
-		}
-		System.out.println("arraylist");
-		ArrayList al = new ArrayList();
-		al.add(2);
-		al.add(3);
-		al.add(4);
-		al.add(5);
-		System.out.println(al);
-		System.out.println("Size of array:  "+ al.size());
-		al.remove(5);
-		al.remove(4);
-		al.remove(2);
-		System.out.println("size of arraylist after remove:  "+ al.size());
-		System.out.println(al);
+		ArrayList<String> myList = new ArrayList<String>();
+		myList.add("robbani");
+		myList.add("jony");
+		myList.add("jon");
+		myList.add("jack");
+		System.out.println(myList.get(1) + " is in the array list");
+		System.out.println(myList.get(3) + " is in the array list");
+		myList.remove("jack");
 
-
-		Iterator it = al.iterator();
-		while (it.hasNext()){
-			System.out.println(al);
+		for(String name: myList){
+			System.out.println(name);
 		}
+
+		Iterator it = myList.iterator();
+		while(it.hasNext()){
+			System.out.println(it.next());
+		}
+
 
 	}
 

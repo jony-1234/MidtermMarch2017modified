@@ -22,8 +22,7 @@ public class UseLinkedList {
 				System.out.println("please enter state name:    ");
 				String statename = sc.nextLine();
 				list.add(statename);
-				list.peek();
-				list.remove();
+
 
 
 			}

@@ -22,7 +22,8 @@ public class DataReader {
 
 
 
-		        String filePath = "c:\\Users\\Md.Golam Robbani\\Desktop\\Homework 4\\Iphone5.txt";
+		//String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		String filePath = "c:\\Users\\Md.Golam Robbani\\Desktop\\Homework 4\\Iphone5.txt";
 
 				FileReader fr = null;
 				BufferedReader br = null;
@@ -65,7 +66,7 @@ public class DataReader {
 
 
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		//String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
 
 	
 	}

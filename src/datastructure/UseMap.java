@@ -25,8 +25,8 @@ public class UseMap {
 		cityofUSA.add("FL");
 		List<String> cityofUK = new ArrayList<>();
 		cityofUK.add("London");
-		cityofUK.add("Phone");
-		cityofUK.add("car");
+		cityofUK.add("Liverpool");
+		cityofUK.add("Bristol");
 		Map<String, List<String>> cityList = new LinkedHashMap<String,List<String>>();
 		cityList.put("Bangladesh",cityofBanaladesh);
 		cityList.put("USA", cityofUSA);

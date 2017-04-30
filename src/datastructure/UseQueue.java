@@ -12,20 +12,21 @@ public class UseQueue {
 		 * Use For Each loop and while loop with Iterator to retrieve data.
 		 * 
 		 */
+
 		Queue<String> queue = new LinkedList<String>();
 		queue.add("NY");
 		queue.add("NJ");
 		queue.add("FL");
-		queue.peek();
-		queue.poll();
-		queue.remove();
+		queue.add("OH");
+		queue.add("MG");
+		queue.add("VER");
+		queue.remove("VER");
 
 		Iterator it = queue.iterator();
-		while (it.hasNext()){
+		while(it.hasNext()){
 			System.out.println(queue.remove());
-			System.out.println(queue.peek());
-			System.out.println(queue.poll());
 		}
+
 	}
 
 }
